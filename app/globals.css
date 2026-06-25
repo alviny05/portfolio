@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  /* LIGHT MODE (Default) */
+  --bg:            #F8F7F4;
+  --bg-card:       #FFFFFF;
+  --bg-card-hover: #FAFAFA;
+  --ink:           #1A1A1A;
+  --ink-muted:     #6B6B6B;
+  --rule:          #E2E0DC;
+  --signal:        #D97706; /* amber — circuit-board copper */
+  --signal-dim:    #FEF3C7;
+
+  --font-mono: 'IBM Plex Mono', monospace;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+/* DARK MODE */
+[data-theme='dark'] {
+  --bg:            #121212;
+  --bg-card:       #1A1A1A;
+  --bg-card-hover: #242424;
+  --ink:           #E5E5E5; /* Off-white for readability */
+  --ink-muted:     #A3A3A3;
+  --rule:          #333333;
+  --signal:        #F59E0B; /* Slightly brighter amber for better contrast on dark */
+  --signal-dim:    #78350F; /* Deep amber for text selection */
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  /* Add smooth transition when toggling themes */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a { color: inherit; text-decoration: none; }
+
+::selection { background: var(--signal-dim); }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
