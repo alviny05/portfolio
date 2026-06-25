@@ -13,7 +13,7 @@ export const data = {
   tagline:
     "I build software that runs close to hardware — from bare-metal firmware to real-time embedded systems.",
 
-  about: `Computer Engineering senior at Boston University (May 2027). I work at the intersection of hardware and software: writing firmware in C/C++, designing RTOS-based systems, and building data pipelines that connect physical devices to the cloud. Currently Embedded Systems Engineer on BU Terrier Motorsport Formula SAE Electric and a Teaching Assistant.`,
+  about: `Computer Engineering senior at Boston University (May 2027). I work at the intersection of hardware and software: writing firmware in C/C++, designing RTOS-based systems, and building data pipelines that connect physical devices to the cloud. Currently Embedded Systems Engineer on BU Terrier Motorsport Formula SAE Electric and a Teaching Assistant for various CE core curriculums.`,
 
   skills: [
     {

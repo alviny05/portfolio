@@ -71,7 +71,7 @@
   font-size: 15px;
   font-weight: 300;
   color: var(--ink-muted);
-  max-width: 900px;
+  max-width: 1000px;
   line-height: 1.75;
 }
 .rule { border: none; border-top: 1px solid var(--rule); margin: 0; }
